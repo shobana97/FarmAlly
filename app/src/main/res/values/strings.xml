@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">farmally</string>
+    <string name="title_activity_sellermodule">Sellermodule</string>
+    <string name="seller_text">Hello...This is seller module</string>
+</resources>

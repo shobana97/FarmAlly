@@ -1,5 +1,24 @@
 <resources>
-    <string name="app_name">farmally</string>
+    <string name="app_name">FarmAlly</string>
     <string name="title_activity_sellermodule">Sellermodule</string>
     <string name="seller_text">Hello...This is seller module</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">This product was harvested on 12.03.2018.  It is a polished rice and free from beetles.</string>
+    <string-array name="kgs">
+        <item>500g</item>
+        <item>1 kg</item>
+        <item>2 kg</item>
+        <item>3 kg</item>
+        <item>4 kg</item>
+        <item>5 kg</item>
+        <item>6 kg</item>
+        <item>7 kg</item>
+    </string-array>
+    <string-array name="type">
+        <item>Cereals</item>
+        <item>Pulses</item>
+        <item>Fruits</item>
+        <item>Vegetables</item>
+
+    </string-array>
 </resources>

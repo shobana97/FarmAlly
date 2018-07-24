@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/farmer"
+    android:gravity="center"
     android:orientation="vertical">
-    <!--ImageView
+    <ImageView
         android:id="@+id/logo"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="40dp"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/logo" /-->
-    <ImageButton
-        android:id="@+id/sell"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="200dp"
-        android:contentDescription="Farmers module"
-        android:scaleType="fitXY"
-        android:src="@drawable/sell" />
+        android:src="@drawable/logo" />
 
     <ImageButton
-        android:id="@+id/buy"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"
-        android:contentDescription="Customers module"
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+        android:contentDescription="Login "
+        android:layout_below="@+id/simpleImageButtonHome"
         android:scaleType="fitXY"
-        android:src="@drawable/buy" />
+        android:src="@drawable/login" />
 
 
-</FrameLayout>
+
+</LinearLayout>

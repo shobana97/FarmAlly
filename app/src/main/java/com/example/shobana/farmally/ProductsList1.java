@@ -1,12 +1,8 @@
 package com.example.shobana.farmally;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.ListActivity;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -26,7 +22,7 @@ public class ProductsList1 extends Activity {
 
 
         final String[] products = {"Rice", "Wheat", "Tomatoes", "Onions", "Potatoes", "Brinjals", "Beans", "Carrots"};
-        ListView listView = (ListView) findViewById(R.id.products_listview);
+        final ListView listView = (ListView) findViewById(R.id.products_listview);
         // Creating a List from String Array elements
         final List<String> products_list = new ArrayList<String>(Arrays.asList(products));
 
@@ -44,7 +40,14 @@ public class ProductsList1 extends Activity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //super.onItemClick(parent, view, position, id);
                 Toast.makeText(ProductsList1.this, products[position], Toast.LENGTH_SHORT).show();
+                if(position ==0){
+                    //Toast.makeText(ProductsList1.this, products[position], Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ProductsList1.this,ProductDescription.class);
+                    startActivity(intent);
+                }
+
             }
         });
 

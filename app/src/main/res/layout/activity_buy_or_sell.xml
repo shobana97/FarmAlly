@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_sun"
+    tools:context="com.example.shobana.farmally.BuyOrSell"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="About"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/about" />
+
+    <ImageButton
+        android:id="@+id/sell"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="Farmers module"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/sell" />
+
+    <ImageButton
+        android:id="@+id/buy"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="Customers module"
+        android:layout_weight="1"
+        android:layout_below="@+id/simpleImageButtonHome"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/buy" />
+
+
+</LinearLayout>
